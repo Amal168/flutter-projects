@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutterproject/chessboard.dart';
 import 'package:flutterproject/circle.dart';
 import 'package:flutterproject/login.dart';
+import 'package:flutterproject/signup.dart';
+import 'package:flutterproject/welcomeback.dart';
 
 void main() {
   runApp(const MyApp());
