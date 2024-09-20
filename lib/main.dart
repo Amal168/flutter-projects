@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutterproject/chessboard.dart';
 import 'package:flutterproject/circle.dart';
 import 'package:flutterproject/login.dart';
-import 'package:flutterproject/signup.dart';
-import 'package:flutterproject/welcomeback.dart';
+import 'package:flutterproject/19_09_24_task/signup.dart';
+import 'package:flutterproject/19_09_24_task/welcomeback.dart';
 
 void main() {
   runApp(const MyApp());
@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: Login(),
+      home: WelcomeBack(),
     );
   }
 }
