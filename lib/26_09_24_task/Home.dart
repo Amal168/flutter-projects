@@ -18,19 +18,20 @@ class _HomeState extends State<Home> {
         centerTitle: true,
         title: const Text("Home"),
         backgroundColor: Colors.lightBlue,
-        automaticallyImplyLeading: true,
+        // automaticallyImplyLeading: true,
       ),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            ElevatedButton(style: ElevatedButton.styleFrom(
-              backgroundColor: Colors.green,
-              side: const BorderSide()
-            ),
+            ElevatedButton(
+              style: ElevatedButton.styleFrom(
+                  backgroundColor: Colors.green, side: const BorderSide()),
               onPressed: () {
-                Navigator.push(context,
-                    MaterialPageRoute(builder: (_) => const ScreenA()));
+                // Navigator.push(context,
+                //     MaterialPageRoute(builder: (_) => const ScreenA()));
+
+                Navigator.pushNamed(context, 'screenA');
               },
               child: const Text(
                 "Go to Screen A",
@@ -42,9 +43,7 @@ class _HomeState extends State<Home> {
             ),
             ElevatedButton(
               style: ElevatedButton.styleFrom(
-                backgroundColor: Colors.green,
-                side: const BorderSide()
-              ),
+                  backgroundColor: Colors.green, side: const BorderSide()),
               onPressed: () {
                 Navigator.push(context,
                     MaterialPageRoute(builder: (_) => const ScreenB()));

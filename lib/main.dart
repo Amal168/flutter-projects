@@ -15,6 +15,7 @@ import 'package:flutterproject/24-09-24-task/signup2.dart';
 import 'package:flutterproject/26_09_24_task/Home.dart';
 import 'package:flutterproject/26_09_24_task/ScreenA.dart';
 import 'package:flutterproject/26_09_24_task/ScreenB.dart';
+import 'package:flutterproject/27_09_24_task/buttons.dart';
 //import 'package:flutterproject/24-09-24-task/login1.dart';
 
 void main() {
@@ -34,8 +35,13 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const ScreenB()
-      ,
+      home:const Login()
+      // routes:  {
+      //   'home': (context) => const Home(),
+      //   'screenA':(context) => const ScreenA(),
+      //   'screenB':(context) => const ScreenB()
+      // },
+      // initialRoute: 'home',
     );
   }
 }

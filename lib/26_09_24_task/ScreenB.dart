@@ -32,8 +32,11 @@ class _ScreenBState extends State<ScreenB> {
             ),
             ElevatedButton(
               onPressed: () {
-                Navigator.push(
-                    context, MaterialPageRoute(builder: (_) => const Home()));
+                // Navigator.push(
+                //     context, MaterialPageRoute(builder: (_) => const Home()));
+                Navigator.pop(
+                  context,
+                );
               },
               child: const Text(
                 "Go back",

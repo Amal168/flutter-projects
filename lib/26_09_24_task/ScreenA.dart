@@ -17,7 +17,7 @@ class _ScreenAState extends State<ScreenA> {
         title: const Text("Screen A"),
         backgroundColor: Colors.lightBlueAccent,
         centerTitle: true,
-        automaticallyImplyLeading: true,
+        // automaticallyImplyLeading: true,
       ),
       body: Center(
         child: Column(
@@ -32,8 +32,9 @@ class _ScreenAState extends State<ScreenA> {
             ),
             ElevatedButton(
               onPressed: () {
-                Navigator.push(
-                    context, MaterialPageRoute(builder: (_) => const Home()));
+                // Navigator.push(
+                //     context, MaterialPageRoute(builder: (context) => const Home()));
+                Navigator.pushNamed(context, 'home');
               },
               child: const Text(
                 "Go back",
