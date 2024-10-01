@@ -15,20 +15,20 @@ class _SignupState extends State<Signup> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
           children: [
-            SizedBox(height: 50,),
-            Text("Sign Up",style: TextStyle(
+            const SizedBox(height: 50,),
+            const Text("Sign Up",style: TextStyle(
               fontSize: 30,fontWeight: FontWeight.bold
             ),),
-            SizedBox(height: 20,),
-            Text("Enter your credential to login"),
-            SizedBox(height: 60,),
+            const SizedBox(height: 20,),
+            const Text("Enter your credential to login"),
+            const SizedBox(height: 60,),
             SizedBox(
               height: 48,
               width: 300,
               child: TextFormField(
                 decoration: InputDecoration(
                   
-                  prefixIcon: Icon(Icons.person),
+                  prefixIcon: const Icon(Icons.person),
                   hintText: "Username",
                   fillColor: const Color.fromARGB(255, 228, 187, 248),
                   filled: true,
@@ -42,14 +42,14 @@ class _SignupState extends State<Signup> {
               ),
             ),
            
-            SizedBox(height: 10,),
+            const SizedBox(height: 10,),
             SizedBox(
               height: 48,
              width: 300,
               child: TextFormField(
                 decoration: InputDecoration(
                   
-                  prefixIcon: Icon(Icons.email),
+                  prefixIcon: const Icon(Icons.email),
                   hintText: "email",
                   fillColor: const Color.fromARGB(255, 225, 187, 248),
                   filled: true,
@@ -63,7 +63,7 @@ class _SignupState extends State<Signup> {
               ),
             ),
 
-            SizedBox(height: 10,),
+            const SizedBox(height: 10,),
             
             SizedBox(
               height: 48,
@@ -73,7 +73,7 @@ class _SignupState extends State<Signup> {
                 obscuringCharacter: "*",
                 decoration: InputDecoration(
                   
-                  prefixIcon: Icon(Icons.password),
+                  prefixIcon: const Icon(Icons.password),
                   hintText: "password",
                   fillColor: const Color.fromARGB(255, 225, 187, 248),
                   filled: true,
@@ -87,7 +87,7 @@ class _SignupState extends State<Signup> {
               ),
             ),
 
-             SizedBox(height: 10,),
+             const SizedBox(height: 10,),
              
             SizedBox(
               height: 48,
@@ -96,7 +96,7 @@ class _SignupState extends State<Signup> {
                 obscureText: true,
                 obscuringCharacter: "*",
                 decoration: InputDecoration(
-                  prefixIcon: Icon(Icons.password),
+                  prefixIcon: const Icon(Icons.password),
                   hintText: "Confirm password",
                   fillColor: const Color.fromARGB(255, 225, 187, 248),
                   filled: true,
@@ -109,7 +109,7 @@ class _SignupState extends State<Signup> {
             ),
 
 
-            SizedBox(height: 10,),
+            const SizedBox(height: 10,),
             
             SizedBox(
               width: 300,
@@ -120,19 +120,19 @@ class _SignupState extends State<Signup> {
                 
               ),
                 onPressed: () {},
-                 child: Text("Login",
+                 child: const Text("Login",
                  //style: ,
                  )),
                  
             ),
-            SizedBox(height: 40,),
-            Column(
+            const SizedBox(height: 40,),
+            const Column(
               children: [
                 Text("Or")
               ],
             ),
 
-            SizedBox(height:40 ,),
+            const SizedBox(height:40 ,),
 
             SizedBox(
               width: 300,
@@ -140,20 +140,20 @@ class _SignupState extends State<Signup> {
               child: ElevatedButton(style: ElevatedButton.styleFrom(
                 backgroundColor:  Colors.white,
                 foregroundColor: Colors.deepPurple,
-                side: BorderSide(color: Colors.deepPurple)
+                side: const BorderSide(color: Colors.deepPurple)
                 
                 
               ),
                 onPressed: () {},
-                 child: Text("Sign in with Google",
+                 child: const Text("Sign in with Google",
                  style: TextStyle(fontWeight: FontWeight.bold),
                  
                  )),
                  
             ),
 
-            SizedBox(height: 40,),
-            Column(
+            const SizedBox(height: 40,),
+            const Column(
               children: [
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,

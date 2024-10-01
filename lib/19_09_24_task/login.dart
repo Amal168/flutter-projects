@@ -25,14 +25,14 @@ class _LoginState extends State<Login> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
           children: [
-             SizedBox(height: 20,),
-             Text("TutorialKart",style: TextStyle(
+             const SizedBox(height: 20,),
+             const Text("TutorialKart",style: TextStyle(
               fontSize: 30,
               fontWeight: FontWeight.bold,
               color: Colors.blue
             ),),
-            SizedBox(height: 30,),
-             Text("Sign in"),
+            const SizedBox(height: 30,),
+             const Text("Sign in"),
             Container(
               
               width: 190,

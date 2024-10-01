@@ -18,13 +18,13 @@ class _MyimageState extends State<Myimage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             ClipOval(
-              child: Container(
+              child: SizedBox(
                 height: 250,
                 width: 250,
                 child: Image.asset("assets/Screenshot 2024-09-19 093431 - Copy (6).png" ,fit: BoxFit.cover,),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 30,
               
               

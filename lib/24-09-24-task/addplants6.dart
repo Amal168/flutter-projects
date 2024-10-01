@@ -11,7 +11,7 @@ class _Signup2State extends State<Addplants6> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xffE7F9DA),
+      backgroundColor: const Color(0xffE7F9DA),
       body: 
       Center(
         child: Column(
@@ -25,8 +25,8 @@ class _Signup2State extends State<Addplants6> {
                 ),
               ),
               
-            Text("Add Plants",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 20),),
-            SizedBox(height: 10,),
+            const Text("Add Plants",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 20),),
+            const SizedBox(height: 10,),
             Container(
               width: 290,
               height: 500,
@@ -35,8 +35,8 @@ class _Signup2State extends State<Addplants6> {
               Column(
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
-                  SizedBox(height: 40,),
-                  Text("    Name",style: TextStyle(fontWeight: FontWeight.bold),),
+                  const SizedBox(height: 40,),
+                  const Text("    Name",style: TextStyle(fontWeight: FontWeight.bold),),
                   Padding(
                     padding: const EdgeInsets.all(8.0),
                     child: TextFormField(
@@ -44,7 +44,7 @@ class _Signup2State extends State<Addplants6> {
                                     decoration: InputDecoration(
                     
                     hintText: "Plant Name",
-                    fillColor:  Color(0xffE7F9DA),
+                    fillColor:  const Color(0xffE7F9DA),
                     filled: true,
                     border: OutlineInputBorder(
                       borderSide: BorderSide.none,
@@ -55,7 +55,7 @@ class _Signup2State extends State<Addplants6> {
                   ),
                   
                                    
-                   Text("    About",style: TextStyle(fontWeight: FontWeight.bold),),
+                   const Text("    About",style: TextStyle(fontWeight: FontWeight.bold),),
 
                   Padding(
                     padding: const EdgeInsets.all(8.0),
@@ -63,7 +63,7 @@ class _Signup2State extends State<Addplants6> {
                       
                     decoration: InputDecoration(
                     hintText: "about",
-                    fillColor:  Color(0xffE7F9DA),
+                    fillColor:  const Color(0xffE7F9DA),
                     filled: true,
                     
                     border: OutlineInputBorder(
@@ -75,7 +75,7 @@ class _Signup2State extends State<Addplants6> {
                                     ),
                                   ),
                   ),
-                  Text("    Image",style: TextStyle(fontWeight: FontWeight.bold),),
+                  const Text("    Image",style: TextStyle(fontWeight: FontWeight.bold),),
 
                   Padding(
                     padding: const EdgeInsets.all(8.0),
@@ -84,9 +84,10 @@ class _Signup2State extends State<Addplants6> {
                                     decoration: InputDecoration(
                     
                     hintText: "Uploade image",
-                    fillColor:  Color(0xffE7F9DA),
+                    fillColor:  const Color(0xffE7F9DA),
                     filled: true,
                     border: OutlineInputBorder(
+                      
                       borderSide: BorderSide.none,
                       borderRadius: BorderRadius.circular(15),
                     )
@@ -104,10 +105,10 @@ class _Signup2State extends State<Addplants6> {
                       child: SizedBox(
                         child: ElevatedButton(
                           style: ElevatedButton.styleFrom(
-                backgroundColor: Color(0xff92D722),
+                backgroundColor: const Color(0xff92D722),
                 foregroundColor: Colors.white,),
                           onPressed: () {}, 
-                        child: Text("Add"),
+                        child: const Text("Add"),
                         ),
                         
                       ),

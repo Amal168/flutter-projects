@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutterproject/01-10-24-task/front.dart';
+import 'package:flutterproject/01-10-24-task/signuppage2.dart';
 import 'package:flutterproject/19_09_24_task/chessboard.dart';
 import 'package:flutterproject/19_09_24_task/circle.dart';
 import 'package:flutterproject/19_09_24_task/image.dart';
@@ -37,7 +39,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home:const Login1()
+      home:const Signuppage2()
       // routes:  {
       //   'home': (context) => const Home(),
       //   'screenA':(context) => const ScreenA(),

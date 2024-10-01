@@ -11,7 +11,7 @@ class _Signup2State extends State<Signup2> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xffE7F9DA),
+      backgroundColor: const Color(0xffE7F9DA),
       body: 
       Center(
         child: Column(
@@ -25,8 +25,8 @@ class _Signup2State extends State<Signup2> {
                 ),
               ),
               
-            Text("SignUp",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 20),),
-            SizedBox(height: 10,),
+            const Text("SignUp",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 20),),
+            const SizedBox(height: 10,),
             Container(
               width: 290,
               height: 500,
@@ -35,16 +35,16 @@ class _Signup2State extends State<Signup2> {
               Column(
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
-                  SizedBox(height: 40,),
-                  Text("    Name",style: TextStyle(fontWeight: FontWeight.bold),),
+                  const SizedBox(height: 40,),
+                  const Text("    Name",style: TextStyle(fontWeight: FontWeight.bold),),
                   Padding(
                     padding: const EdgeInsets.all(8.0),
                     child: TextFormField(
                       
                                     decoration: InputDecoration(
-                    prefixIcon: Icon(Icons.person),
+                    prefixIcon: const Icon(Icons.person),
                     hintText: "Enter your Name",
-                    fillColor:  Color(0xffE7F9DA),
+                    fillColor:  const Color(0xffE7F9DA),
                     filled: true,
                     border: OutlineInputBorder(
                       borderSide: BorderSide.none,
@@ -53,16 +53,16 @@ class _Signup2State extends State<Signup2> {
                                     ),
                                   ),
                   ),
-                  Text("    Mobile Number",style: TextStyle(fontWeight: FontWeight.bold),),
+                  const Text("    Mobile Number",style: TextStyle(fontWeight: FontWeight.bold),),
 
                   Padding(
                     padding: const EdgeInsets.all(8.0),
                     child: TextFormField(
                       
                                     decoration: InputDecoration(
-                    prefixIcon: Icon(Icons.phone),
+                    prefixIcon: const Icon(Icons.phone),
                     hintText: "Enter your Mobile Number",
-                    fillColor:  Color(0xffE7F9DA),
+                    fillColor:  const Color(0xffE7F9DA),
                     filled: true,
                     border: OutlineInputBorder(
                       borderSide: BorderSide.none,
@@ -72,16 +72,16 @@ class _Signup2State extends State<Signup2> {
                                   ),
                   ),
                                    
-                                    Text("    Email",style: TextStyle(fontWeight: FontWeight.bold),),
+                                    const Text("    Email",style: TextStyle(fontWeight: FontWeight.bold),),
 
                   Padding(
                     padding: const EdgeInsets.all(8.0),
                     child: TextFormField(
                       
                                     decoration: InputDecoration(
-                    prefixIcon: Icon(Icons.email),
+                    prefixIcon: const Icon(Icons.email),
                     hintText: "Enter your Email",
-                    fillColor:  Color(0xffE7F9DA),
+                    fillColor:  const Color(0xffE7F9DA),
                     filled: true,
                     border: OutlineInputBorder(
                       borderSide: BorderSide.none,
@@ -90,16 +90,16 @@ class _Signup2State extends State<Signup2> {
                                     ),
                                   ),
                   ),
-                  Text("    Password",style: TextStyle(fontWeight: FontWeight.bold),),
+                  const Text("    Password",style: TextStyle(fontWeight: FontWeight.bold),),
 
                   Padding(
                     padding: const EdgeInsets.all(8.0),
                     child: TextFormField(
                       
                                     decoration: InputDecoration(
-                    prefixIcon: Icon(Icons.lock_clock_outlined),
+                    prefixIcon: const Icon(Icons.lock_clock_outlined),
                     hintText: "Enter your password",
-                    fillColor:  Color(0xffE7F9DA),
+                    fillColor:  const Color(0xffE7F9DA),
                     filled: true,
                     border: OutlineInputBorder(
                       borderSide: BorderSide.none,
@@ -119,10 +119,10 @@ class _Signup2State extends State<Signup2> {
                       child: SizedBox(
                         child: ElevatedButton(
                           style: ElevatedButton.styleFrom(
-                backgroundColor: Color(0xff92D722),
+                backgroundColor: const Color(0xff92D722),
                 foregroundColor: Colors.white,),
                           onPressed: () {}, 
-                        child: Text("SignUp"),
+                        child: const Text("SignUp"),
                         ),
                         
                       ),
@@ -130,7 +130,7 @@ class _Signup2State extends State<Signup2> {
                       
                     ),
                   ),
-                  Column(
+                  const Column(
                     children: [
                       Text("Back to login"),
                     ],

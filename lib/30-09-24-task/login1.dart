@@ -67,6 +67,7 @@ class _Login1State extends State<Login1> {
                         return "invalied email";
                       } else if (emailController.text != amalemail)
                         return "wrong email";
+                      
                     },
                     controller: emailController,
                     decoration: InputDecoration(
@@ -91,22 +92,30 @@ class _Login1State extends State<Login1> {
                       } else if (passwordController.text != amalpass) {
                         return "invalid password";
                       }
+                      return null;
                     },
                     controller: passwordController,
-                    obscureText: true,
+                    obscureText: obscure,
                     obscuringCharacter: "*",
                     decoration: InputDecoration(
                         fillColor: Colors.white,
                         filled: true,
-                        prefixIcon: const Icon(Icons.password),
+                        prefixIcon:  const Icon(Icons.password),
                         hintText: "Password",
+                        suffixIcon: IconButton(
+                            onPressed: () {
+                              togleButton();
+                            },
+                            icon: Icon(obscure? Icons.remove_red_eye:Icons.close)),
                         hintStyle: const TextStyle(fontWeight: FontWeight.bold),
                         border: OutlineInputBorder(
                             borderSide: const BorderSide(),
                             borderRadius: BorderRadius.circular(30))),
                   ),
                 ),
-                SizedBox(height: 20,),
+                const SizedBox(
+                  height: 20,
+                ),
                 SizedBox(
                   height: 50,
                   width: 200,
@@ -120,7 +129,8 @@ class _Login1State extends State<Login1> {
                               context,
                               MaterialPageRoute(
                                   builder: (_) => const Homepage2()));
-                        } else if (emailController.text.isEmpty||passwordController.text.isEmpty) {
+                        } else if (emailController.text.isEmpty ||
+                            passwordController.text.isEmpty) {
                           ScaffoldMessenger.of(context).showSnackBar(
                               const SnackBar(
                                   content: Text("invalied enai and passwprd")));

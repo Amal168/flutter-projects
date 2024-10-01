@@ -11,7 +11,7 @@ class _MycartState extends State<Mycart5> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xffE7F9DA),
+      backgroundColor: const Color(0xffE7F9DA),
       body: 
       
       Center(
@@ -21,8 +21,8 @@ class _MycartState extends State<Mycart5> {
           child: Column(crossAxisAlignment: CrossAxisAlignment.start,
           
             children: [
-              SizedBox(height: 40,),
-              Text("My cart",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 30),),
+              const SizedBox(height: 40,),
+              const Text("My cart",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 30),),
             Container(
                 height: 60,
                 decoration: BoxDecoration(border: Border.all(),borderRadius: BorderRadius.circular(20),color: Colors.white),
@@ -33,10 +33,10 @@ class _MycartState extends State<Mycart5> {
                       child: Row(
                         children: [
                           Image.asset("assets/pot2.png"),
-                          SizedBox(width: 10,),
-                          Text("monstera",style: TextStyle(fontWeight: FontWeight.bold),),
-                          SizedBox(width: 340,),
-                          Icon(Icons.delete)
+                          const SizedBox(width: 10,),
+                          const Text("monstera",style: TextStyle(fontWeight: FontWeight.bold),),
+                          const SizedBox(width: 340,),
+                          const Icon(Icons.delete)
                         ],
                       ),
                       
@@ -45,7 +45,7 @@ class _MycartState extends State<Mycart5> {
                 ),
               ),
               
-              SizedBox(height: 10,),
+              const SizedBox(height: 10,),
               Container(
                 height: 60,
                 decoration: BoxDecoration(border: Border.all(),borderRadius: BorderRadius.circular(20),color: Colors.white),
@@ -56,10 +56,10 @@ class _MycartState extends State<Mycart5> {
                       child: Row(
                         children: [
                           Image.asset("assets/pot3.png"),
-                          SizedBox(width: 10,),
-                          Text("monstera",style: TextStyle(fontWeight: FontWeight.bold),),
-                          SizedBox(width: 340,),
-                          Icon(Icons.delete)
+                          const SizedBox(width: 10,),
+                          const Text("monstera",style: TextStyle(fontWeight: FontWeight.bold),),
+                          const SizedBox(width: 340,),
+                          const Icon(Icons.delete)
                         ],
                       ),
                       
@@ -67,22 +67,22 @@ class _MycartState extends State<Mycart5> {
                   ],
                 ),
               ),
-              SizedBox(height: 400,),
+              const SizedBox(height: 400,),
               Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
-                  Container(
+                  SizedBox(
                     width: 200,
                     height: 40,
-                    child: ElevatedButton(style: ElevatedButton.styleFrom(backgroundColor: Color(0xff92D722)),
+                    child: ElevatedButton(style: ElevatedButton.styleFrom(backgroundColor: const Color(0xff92D722)),
                       onPressed: () {},
-                     child: Text("Buy",style: TextStyle(fontWeight: FontWeight.bold,color: Colors.white),)),
+                     child: const Text("Buy",style: TextStyle(fontWeight: FontWeight.bold,color: Colors.white),)),
                   ),
-                   Container(
+                   SizedBox(
                     width: 200,
                     height: 40,
-                     child: ElevatedButton(style: ElevatedButton.styleFrom(backgroundColor: Color(0xff92D722)),
+                     child: ElevatedButton(style: ElevatedButton.styleFrom(backgroundColor: const Color(0xff92D722)),
                       onPressed: () {},
-                     child: Text("Home",style: TextStyle(fontWeight: FontWeight.bold,color: Colors.white),)),
+                     child: const Text("Home",style: TextStyle(fontWeight: FontWeight.bold,color: Colors.white),)),
                    )
                 ],
               )
