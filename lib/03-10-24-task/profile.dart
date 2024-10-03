@@ -15,8 +15,11 @@ class Profile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.yellow,
       appBar: AppBar(
-        title: Text('Profile Page'),
+        centerTitle: true,
+        backgroundColor: Colors.blueAccent[700],
+        title: Text('Profile Page',style: TextStyle(fontWeight: FontWeight.bold),),
       ),
       body: Center(
         child: Padding(
@@ -25,13 +28,17 @@ class Profile extends StatelessWidget {
             children: [
               CircleAvatar(
                 radius: 50,
-                 child: Image.asset(
-                    'assets/leaf.png'), // Placeholder image
+                backgroundImage: AssetImage("assets/gear-5-luffy-artwork-5k-3840x2160-18363.jpg"),
+              
               ),
               SizedBox(height: 16),
               Text(
-                'Amal S',
+                'Monkey D Luffy',
                 style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+              ),
+              Text(
+                'Flutter Developer',
+                style: TextStyle(fontSize: 14, fontWeight: FontWeight.bold),
               ),
               
              
@@ -54,10 +61,9 @@ class Profile extends StatelessWidget {
                 onPressed: () {
                   Fluttertoast.showToast(
                     msg: "Welcome to your profile!",
-                    toastLength: Toast.LENGTH_SHORT,
-                    gravity: ToastGravity.BOTTOM,
-                    timeInSecForIosWeb: 1,
-                    backgroundColor: Colors.black54,
+                    toastLength: Toast.LENGTH_LONG,
+                    gravity: ToastGravity.BOTTOM_RIGHT,
+                    backgroundColor: Colors.green,
                     textColor: Colors.white,
                     fontSize: 16.0,
                   );
@@ -70,7 +76,6 @@ class Profile extends StatelessWidget {
                   ScaffoldMessenger.of(context).showSnackBar(
                     SnackBar(
                       content: Text('Profile updated!'),
-                      duration: Duration(seconds: 2),
                     ),
                   );
                 },
