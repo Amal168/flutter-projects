@@ -28,7 +28,7 @@ class _Booking2State extends State<Booking2> {
             Text(
                 setdate != null
                     ? "${setdate!.day}-${setdate!.month}-${setdate!.year}"
-                    : "No Date Chossen",
+                    : "Chossen Date",
                 style: TextStyle(fontSize: 40, fontWeight: FontWeight.bold)),
             ElevatedButton(
                 style: ElevatedButton.styleFrom(
@@ -55,7 +55,7 @@ class _Booking2State extends State<Booking2> {
             Text(
               settime != null
                   ? "${settime!.hour}:${settime!.minute}"
-                  : "Time not changed",
+                  : "Choose Time",
               style: TextStyle(fontSize: 40, fontWeight: FontWeight.bold),
             ),
             ElevatedButton(
@@ -79,11 +79,19 @@ class _Booking2State extends State<Booking2> {
             ),
             ElevatedButton(
                 onPressed: () {
+                  if (setdate != null && settime != null)
                     Navigator.push(
-                        context, MaterialPageRoute(builder: (_) => Conferm2()));
-                  
+                        context,
+                        MaterialPageRoute(
+                            builder: (_) => Conferm2(
+                                  date: setdate,
+                                  time: settime,
+                                )));
+                  else
+                    ScaffoldMessenger.of(context).showSnackBar(
+                        SnackBar(content: Text("Change Date and Time")));
                 },
-                child: Text("Confirm Booking"))
+                child: Text("Confirm Booking")),
           ],
         ),
       ),
