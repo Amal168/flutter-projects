@@ -21,7 +21,7 @@ class _FrontState extends State<Front> {
                   height: 400,
                   width: 500,
                   decoration: BoxDecoration(
-                    borderRadius: BorderRadius.only(
+                    borderRadius: const BorderRadius.only(
                         bottomLeft: Radius.circular(200),
                         bottomRight: Radius.circular(200)),
                     border: Border.all(),
@@ -35,32 +35,32 @@ class _FrontState extends State<Front> {
                       child: Container(
                         width: 100,
                         height: 100,
-                        child: Image.asset("assets/leaf.png"),
                         decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(50),
                             color: Colors.white),
+                        child: Image.asset("assets/leaf.png"),
                       ),
                     ),
                   ),
                 )
               ],
             ),
-            SizedBox(
+            const SizedBox(
               height: 50,
             ),
-            Text(
+            const Text(
               "Leafboard",
               style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
             ),
-            Text("A platform build for a new way of working"),
+            const Text("A platform build for a new way of working"),
             ElevatedButton(
                 style: ElevatedButton.styleFrom(
                     backgroundColor: Colors.green[300]),
                 onPressed: () {
                   Navigator.push(context,
-                      MaterialPageRoute(builder: (_) => Signuppage2()));
+                      MaterialPageRoute(builder: (_) => const Signuppage2()));
                 },
-                child: Text(
+                child: const Text(
                   "Get start for free>",
                   style: TextStyle(
                       fontWeight: FontWeight.bold, color: Colors.black),

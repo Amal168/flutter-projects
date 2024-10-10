@@ -6,9 +6,15 @@ import 'package:flutterproject/04-10-24-task/booking2.dart';
 import 'package:flutterproject/04-10-24-task/conferm2.dart';
 import 'package:flutterproject/04-10-24-task/home1.dart';
 import 'package:flutterproject/07-10-24-task/alertbox.dart';
+import 'package:flutterproject/07-10-24-task/bottombarEx.dart';
+import 'package:flutterproject/07-10-24-task/tadbaranddrawerEx.dart';
+import 'package:flutterproject/09-10-24-task/count.dart';
+// import 'package:flutterproject/07-10-24-task/tadbarEx.dart';
 import 'package:flutterproject/09-10-24-task/profile1.dart';
+import 'package:flutterproject/09-10-24-task/storescreen.dart';
 import 'package:flutterproject/10-10-24-task/Tabsection2.dart';
 import 'package:flutterproject/10-10-24-task/homeScreen1.dart';
+import 'package:flutterproject/11-10-24-task/sharedprefirenceEx.dart';
 import 'package:flutterproject/19_09_24_task/chessboard.dart';
 import 'package:flutterproject/19_09_24_task/circle.dart';
 import 'package:flutterproject/19_09_24_task/image.dart';
@@ -47,7 +53,14 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: Profile1()
+      // home: const BottomNavigationBarEg(),
+      // home:  tadbaranddrawerEx(),
+      home:  Tabsection2(),
+      // home:  Sharedprefirenceex(),
+      // home:  CounterScreen(),
+      // home:  NameStorageScreen(),
+      // home: Homescreen1(),
+
       // routes:  {
       //   'home': (context) => const Home(),
       //   'screenA':(context) => const ScreenA(),

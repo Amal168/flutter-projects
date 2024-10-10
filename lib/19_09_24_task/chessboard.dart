@@ -26,7 +26,7 @@ class _chessboardState extends State<chessboard> {
               child: Column(mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Row(children: [
-                  SizedBox(
+                  const SizedBox(
                     width: 42,
                     height: 42,
                     //color: Colors.black,
@@ -36,7 +36,7 @@ class _chessboardState extends State<chessboard> {
                     height: 42,
                     color: Colors.black,
                   ),
-                  SizedBox(
+                  const SizedBox(
                     width: 42,
                     height: 42,
                     //color: Colors.black,
@@ -46,7 +46,7 @@ class _chessboardState extends State<chessboard> {
                     height: 42,
                     color: Colors.black,
                   ),
-                  SizedBox(
+                  const SizedBox(
                     width: 42,
                     height: 42,
                     //color: Colors.black,
@@ -56,91 +56,7 @@ class _chessboardState extends State<chessboard> {
                     height: 42,
                     color: Colors.black,
                   ),
-                  SizedBox(
-                    width: 42,
-                    height: 42,
-                    //color: Colors.black,
-                  ),
-                  Container(
-                    width: 42,
-                    height: 42,
-                    color: Colors.black,
-                  ),
-                ],),
-                Row(children: [
-                  Container(
-                    width: 42,
-                    height: 42,
-                    color: Colors.black,
-                  ),
-                  SizedBox(
-                    width: 42,
-                    height: 42,
-                    //color: Colors.black,
-                  ),
-                  Container(
-                    width: 42,
-                    height: 42,
-                    color: Colors.black,
-                  ),
-                  SizedBox(
-                    width: 42,
-                    height: 42,
-                    //color: Colors.black,
-                  ),
-                  Container(
-                    width: 42,
-                    height: 42,
-                    color: Colors.black,
-                  ),
-                  SizedBox(
-                    width: 42,
-                    height: 42,
-                    //color: Colors.black,
-                  ),
-                  Container(
-                    width: 42,
-                    height: 42,
-                    color: Colors.black,
-                  ),
-                  SizedBox(
-                    width: 42,
-                    height: 42,
-                    //color: Colors.black,
-                  ),
-                ],),
-                Row(children: [
-                  SizedBox(
-                    width: 42,
-                    height: 42,
-                    //color: Colors.black,
-                  ),
-                  Container(
-                    width: 42,
-                    height: 42,
-                    color: Colors.black,
-                  ),
-                  SizedBox(
-                    width: 42,
-                    height: 42,
-                    //color: Colors.black,
-                  ),
-                  Container(
-                    width: 42,
-                    height: 42,
-                    color: Colors.black,
-                  ),
-                  SizedBox(
-                    width: 42,
-                    height: 42,
-                    //color: Colors.black,
-                  ),
-                  Container(
-                    width: 42,
-                    height: 42,
-                    color: Colors.black,
-                  ),
-                  SizedBox(
+                  const SizedBox(
                     width: 42,
                     height: 42,
                     //color: Colors.black,
@@ -157,7 +73,7 @@ class _chessboardState extends State<chessboard> {
                     height: 42,
                     color: Colors.black,
                   ),
-                  SizedBox(
+                  const SizedBox(
                     width: 42,
                     height: 42,
                     //color: Colors.black,
@@ -167,7 +83,7 @@ class _chessboardState extends State<chessboard> {
                     height: 42,
                     color: Colors.black,
                   ),
-                  SizedBox(
+                  const SizedBox(
                     width: 42,
                     height: 42,
                     //color: Colors.black,
@@ -177,7 +93,7 @@ class _chessboardState extends State<chessboard> {
                     height: 42,
                     color: Colors.black,
                   ),
-                  SizedBox(
+                  const SizedBox(
                     width: 42,
                     height: 42,
                     //color: Colors.black,
@@ -187,14 +103,14 @@ class _chessboardState extends State<chessboard> {
                     height: 42,
                     color: Colors.black,
                   ),
-                  SizedBox(
+                  const SizedBox(
                     width: 42,
                     height: 42,
                     //color: Colors.black,
                   ),
                 ],),
                 Row(children: [
-                  SizedBox(
+                  const SizedBox(
                     width: 42,
                     height: 42,
                     //color: Colors.black,
@@ -204,7 +120,7 @@ class _chessboardState extends State<chessboard> {
                     height: 42,
                     color: Colors.black,
                   ),
-                  SizedBox(
+                  const SizedBox(
                     width: 42,
                     height: 42,
                     //color: Colors.black,
@@ -214,7 +130,7 @@ class _chessboardState extends State<chessboard> {
                     height: 42,
                     color: Colors.black,
                   ),
-                  SizedBox(
+                  const SizedBox(
                     width: 42,
                     height: 42,
                     //color: Colors.black,
@@ -224,91 +140,7 @@ class _chessboardState extends State<chessboard> {
                     height: 42,
                     color: Colors.black,
                   ),
-                  SizedBox(
-                    width: 42,
-                    height: 42,
-                    //color: Colors.black,
-                  ),
-                  Container(
-                    width: 42,
-                    height: 42,
-                    color: Colors.black,
-                  ),
-                ],),
-                Row(children: [
-                  Container(
-                    width: 42,
-                    height: 42,
-                    color: Colors.black,
-                  ),
-                  SizedBox(
-                    width: 42,
-                    height: 42,
-                    //color: Colors.black,
-                  ),
-                  Container(
-                    width: 42,
-                    height: 42,
-                    color: Colors.black,
-                  ),
-                  SizedBox(
-                    width: 42,
-                    height: 42,
-                    //color: Colors.black,
-                  ),
-                  Container(
-                    width: 42,
-                    height: 42,
-                    color: Colors.black,
-                  ),
-                  SizedBox(
-                    width: 42,
-                    height: 42,
-                    //color: Colors.black,
-                  ),
-                  Container(
-                    width: 42,
-                    height: 42,
-                    color: Colors.black,
-                  ),
-                  SizedBox(
-                    width: 42,
-                    height: 42,
-                    //color: Colors.black,
-                  ),
-                ],),
-                Row(children: [
-                  SizedBox(
-                    width: 42,
-                    height: 42,
-                    //color: Colors.black,
-                  ),
-                  Container(
-                    width: 42,
-                    height: 42,
-                    color: Colors.black,
-                  ),
-                  SizedBox(
-                    width: 42,
-                    height: 42,
-                    //color: Colors.black,
-                  ),
-                  Container(
-                    width: 42,
-                    height: 42,
-                    color: Colors.black,
-                  ),
-                  SizedBox(
-                    width: 42,
-                    height: 42,
-                    //color: Colors.black,
-                  ),
-                  Container(
-                    width: 42,
-                    height: 42,
-                    color: Colors.black,
-                  ),
-                  SizedBox(
+                  const SizedBox(
                     width: 42,
                     height: 42,
                     //color: Colors.black,
@@ -325,7 +157,7 @@ class _chessboardState extends State<chessboard> {
                     height: 42,
                     color: Colors.black,
                   ),
-                  SizedBox(
+                  const SizedBox(
                     width: 42,
                     height: 42,
                     //color: Colors.black,
@@ -335,7 +167,7 @@ class _chessboardState extends State<chessboard> {
                     height: 42,
                     color: Colors.black,
                   ),
-                  SizedBox(
+                  const SizedBox(
                     width: 42,
                     height: 42,
                     //color: Colors.black,
@@ -345,7 +177,7 @@ class _chessboardState extends State<chessboard> {
                     height: 42,
                     color: Colors.black,
                   ),
-                  SizedBox(
+                  const SizedBox(
                     width: 42,
                     height: 42,
                     //color: Colors.black,
@@ -355,7 +187,175 @@ class _chessboardState extends State<chessboard> {
                     height: 42,
                     color: Colors.black,
                   ),
-                  SizedBox(
+                  const SizedBox(
+                    width: 42,
+                    height: 42,
+                    //color: Colors.black,
+                  ),
+                ],),
+                Row(children: [
+                  const SizedBox(
+                    width: 42,
+                    height: 42,
+                    //color: Colors.black,
+                  ),
+                  Container(
+                    width: 42,
+                    height: 42,
+                    color: Colors.black,
+                  ),
+                  const SizedBox(
+                    width: 42,
+                    height: 42,
+                    //color: Colors.black,
+                  ),
+                  Container(
+                    width: 42,
+                    height: 42,
+                    color: Colors.black,
+                  ),
+                  const SizedBox(
+                    width: 42,
+                    height: 42,
+                    //color: Colors.black,
+                  ),
+                  Container(
+                    width: 42,
+                    height: 42,
+                    color: Colors.black,
+                  ),
+                  const SizedBox(
+                    width: 42,
+                    height: 42,
+                    //color: Colors.black,
+                  ),
+                  Container(
+                    width: 42,
+                    height: 42,
+                    color: Colors.black,
+                  ),
+                ],),
+                Row(children: [
+                  Container(
+                    width: 42,
+                    height: 42,
+                    color: Colors.black,
+                  ),
+                  const SizedBox(
+                    width: 42,
+                    height: 42,
+                    //color: Colors.black,
+                  ),
+                  Container(
+                    width: 42,
+                    height: 42,
+                    color: Colors.black,
+                  ),
+                  const SizedBox(
+                    width: 42,
+                    height: 42,
+                    //color: Colors.black,
+                  ),
+                  Container(
+                    width: 42,
+                    height: 42,
+                    color: Colors.black,
+                  ),
+                  const SizedBox(
+                    width: 42,
+                    height: 42,
+                    //color: Colors.black,
+                  ),
+                  Container(
+                    width: 42,
+                    height: 42,
+                    color: Colors.black,
+                  ),
+                  const SizedBox(
+                    width: 42,
+                    height: 42,
+                    //color: Colors.black,
+                  ),
+                ],),
+                Row(children: [
+                  const SizedBox(
+                    width: 42,
+                    height: 42,
+                    //color: Colors.black,
+                  ),
+                  Container(
+                    width: 42,
+                    height: 42,
+                    color: Colors.black,
+                  ),
+                  const SizedBox(
+                    width: 42,
+                    height: 42,
+                    //color: Colors.black,
+                  ),
+                  Container(
+                    width: 42,
+                    height: 42,
+                    color: Colors.black,
+                  ),
+                  const SizedBox(
+                    width: 42,
+                    height: 42,
+                    //color: Colors.black,
+                  ),
+                  Container(
+                    width: 42,
+                    height: 42,
+                    color: Colors.black,
+                  ),
+                  const SizedBox(
+                    width: 42,
+                    height: 42,
+                    //color: Colors.black,
+                  ),
+                  Container(
+                    width: 42,
+                    height: 42,
+                    color: Colors.black,
+                  ),
+                ],),
+                Row(children: [
+                  Container(
+                    width: 42,
+                    height: 42,
+                    color: Colors.black,
+                  ),
+                  const SizedBox(
+                    width: 42,
+                    height: 42,
+                    //color: Colors.black,
+                  ),
+                  Container(
+                    width: 42,
+                    height: 42,
+                    color: Colors.black,
+                  ),
+                  const SizedBox(
+                    width: 42,
+                    height: 42,
+                    //color: Colors.black,
+                  ),
+                  Container(
+                    width: 42,
+                    height: 42,
+                    color: Colors.black,
+                  ),
+                  const SizedBox(
+                    width: 42,
+                    height: 42,
+                    //color: Colors.black,
+                  ),
+                  Container(
+                    width: 42,
+                    height: 42,
+                    color: Colors.black,
+                  ),
+                  const SizedBox(
                     width: 42,
                     height: 42,
                     //color: Colors.black,

@@ -17,7 +17,7 @@ class _Booking2State extends State<Booking2> {
     return Scaffold(
       backgroundColor: Colors.blue,
       appBar: AppBar(
-        title: Text("Booking Page"),
+        title: const Text("Booking Page"),
         backgroundColor: Colors.yellowAccent,
         centerTitle: true,
       ),
@@ -29,7 +29,7 @@ class _Booking2State extends State<Booking2> {
                 setdate != null
                     ? "${setdate!.day}-${setdate!.month}-${setdate!.year}"
                     : "Chossen Date",
-                style: TextStyle(fontSize: 40, fontWeight: FontWeight.bold)),
+                style: const TextStyle(fontSize: 40, fontWeight: FontWeight.bold)),
             ElevatedButton(
                 style: ElevatedButton.styleFrom(
                     backgroundColor: Colors.orangeAccent),
@@ -45,18 +45,18 @@ class _Booking2State extends State<Booking2> {
                     });
                   }
                 },
-                child: Text(
+                child: const Text(
                   "change date",
                   style: TextStyle(fontWeight: FontWeight.bold),
                 )),
-            SizedBox(
+            const SizedBox(
               height: 50,
             ),
             Text(
               settime != null
                   ? "${settime!.hour}:${settime!.minute}"
                   : "Choose Time",
-              style: TextStyle(fontSize: 40, fontWeight: FontWeight.bold),
+              style: const TextStyle(fontSize: 40, fontWeight: FontWeight.bold),
             ),
             ElevatedButton(
                 style: ElevatedButton.styleFrom(
@@ -70,16 +70,16 @@ class _Booking2State extends State<Booking2> {
                     });
                   }
                 },
-                child: Text(
+                child: const Text(
                   "Change Time",
                   style: TextStyle(fontWeight: FontWeight.bold),
                 )),
-            SizedBox(
+            const SizedBox(
               height: 30,
             ),
             ElevatedButton(
                 onPressed: () {
-                  if (setdate != null && settime != null)
+                  if (setdate != null && settime != null) {
                     Navigator.push(
                         context,
                         MaterialPageRoute(
@@ -87,11 +87,12 @@ class _Booking2State extends State<Booking2> {
                                   date: setdate,
                                   time: settime,
                                 )));
-                  else
+                  } else {
                     ScaffoldMessenger.of(context).showSnackBar(
-                        SnackBar(content: Text("Change Date and Time")));
+                        const SnackBar(content: Text("Change Date and Time")));
+                  }
                 },
-                child: Text("Confirm Booking")),
+                child: const Text("Confirm Booking")),
           ],
         ),
       ),

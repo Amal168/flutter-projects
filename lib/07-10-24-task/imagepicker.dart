@@ -18,21 +18,21 @@ class _ImagepickerEgState extends State<ImagepickerEg> {
         context: context,
         builder: (BuildContext context) {
           return AlertDialog(
-            title: Text("choose an option"),
-            content: Text("pick an image from galary or new photo"),
+            title: const Text("choose an option"),
+            content: const Text("pick an image from galary or new photo"),
             actions: <Widget>[
               TextButton(
                   onPressed: () {
                     Navigator.of(context).pop();
                     pickimage(ImageSource.gallery);
                   },
-                  child: Text("gallary")),
+                  child: const Text("gallary")),
               TextButton(
                   onPressed: () {
                     Navigator.of(context).pop();
                     pickimage(ImageSource.camera);
                   },
-                  child: Text("Camara"))
+                  child: const Text("Camara"))
             ],
           );
         });
@@ -53,16 +53,16 @@ class _ImagepickerEgState extends State<ImagepickerEg> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("image picker example"),
+        title: const Text("image picker example"),
       ),
       body: Center(
         child: Column(mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            image==null?Text("no image selected"):Image.file(image!),
-            SizedBox(height: 20,),
+            image==null?const Text("no image selected"):Image.file(image!),
+            const SizedBox(height: 20,),
             ElevatedButton(onPressed: showimagepickerdialogeEx
 
-            , child: Text("pick image"))
+            , child: const Text("pick image"))
           ],
         ),
       ),

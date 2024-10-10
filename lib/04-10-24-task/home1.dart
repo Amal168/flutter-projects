@@ -14,7 +14,7 @@ class _Home1State extends State<Home1> {
     return Scaffold(
       backgroundColor: Colors.yellowAccent,
       appBar: AppBar(
-        title: Text("Occupy Your Seat",style: TextStyle(fontSize: 30,fontWeight: FontWeight.bold),),
+        title: const Text("Occupy Your Seat",style: TextStyle(fontSize: 30,fontWeight: FontWeight.bold),),
         centerTitle: true,
         backgroundColor: Colors.blue[200],
       ),
@@ -22,11 +22,11 @@ class _Home1State extends State<Home1> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Text(
+            const Text(
               "Occupy Your Seat",
               style: TextStyle(fontSize: 40, fontWeight: FontWeight.bold),
             ),
-            SizedBox(
+            const SizedBox(
               height: 20,
             ),
             ElevatedButton(
@@ -35,9 +35,9 @@ class _Home1State extends State<Home1> {
               ),
                 onPressed: () {
                   Navigator.push(
-                      context, MaterialPageRoute(builder: (_) => Booking2()));
+                      context, MaterialPageRoute(builder: (_) => const Booking2()));
                 },
-                child: Text("Booking Page >",)),
+                child: const Text("Booking Page >",)),
           ],
         ),
       ),

@@ -129,7 +129,7 @@ class _Signuppage2State extends State<Signuppage2> {
                               color: Colors.green[300],
                               border: Border.all(),
                               borderRadius: BorderRadius.circular(30)),
-                          child: Row(
+                          child: const Row(
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [Text("Continue"), Text(">")],
                           ),
@@ -146,12 +146,12 @@ class _Signuppage2State extends State<Signuppage2> {
                     //     onPressed: () {
                     //   }, child: const Text("Continue",style: TextStyle(fontWeight: FontWeight.bold),)),
                     // ),
-                    SizedBox(
+                    const SizedBox(
                       height: 20,
                     ),
                     const Text(
                         "---------------------------------or-------------------------------"),
-                    SizedBox(
+                    const SizedBox(
                       height: 20,
                     ),
 
@@ -175,13 +175,13 @@ class _Signuppage2State extends State<Signuppage2> {
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
                               Image.asset("assets/download.png"),
-                              Text("Sign in with google"),
+                              const Text("Sign in with google"),
                             ],
                           ),
                         ),
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 10,
                     ),
                     SizedBox(
@@ -200,7 +200,7 @@ class _Signuppage2State extends State<Signuppage2> {
                           decoration: BoxDecoration(
                               border: Border.all(),
                               borderRadius: BorderRadius.circular(30)),
-                          child: Row(
+                          child: const Row(
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
                               Icon(Icons.apple),

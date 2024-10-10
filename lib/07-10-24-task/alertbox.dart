@@ -14,7 +14,7 @@ class _ImagepickerState extends State<Imagepicker> {
     return Scaffold(
       body: Center(
         child: ElevatedButton(
-            onPressed: () => alertbox(context), child: Text("alert")),
+            onPressed: () => alertbox(context), child: const Text("alert")),
       ),
     );
   }
@@ -25,17 +25,17 @@ void alertbox(BuildContext context) {
       context: context,
       builder: (BuildContext context) {
         return AlertDialog(
-          title: Text("warning"),
-          content: Text("do you want to conyinue"),
+          title: const Text("warning"),
+          content: const Text("do you want to conyinue"),
           actions: [
             ElevatedButton(
                 onPressed: () {
                   Navigator.pop(context);
                   ScaffoldMessenger.of(context)
-                      .showSnackBar(SnackBar(content: Text("ok")));
+                      .showSnackBar(const SnackBar(content: Text("ok")));
                 },
-                child: Text("cancel")),
-            SizedBox(
+                child: const Text("cancel")),
+            const SizedBox(
               width: 10,
             ),
             ElevatedButton(
@@ -49,10 +49,10 @@ void alertbox(BuildContext context) {
                     gravity: ToastGravity.NONE
                   );
                   ScaffoldMessenger.of(context)
-                      .showSnackBar(SnackBar(content: Text("thank you")));
+                      .showSnackBar(const SnackBar(content: Text("thank you")));
                       
                 },
-                child: Text("ok"))
+                child: const Text("ok"))
           ],
         );
       });

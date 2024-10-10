@@ -14,7 +14,7 @@ class _Conferm2State extends State<Conferm2> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Confirmation Page"),
+        title: const Text("Confirmation Page"),
         centerTitle: true,
         backgroundColor: Colors.blueAccent,
       ),

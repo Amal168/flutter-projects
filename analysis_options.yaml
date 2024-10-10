@@ -10,6 +10,7 @@
 analyzer:
   errors:
     annotate_overrides: ignore
+    body_might_complete_normally_nullable: ignore
     non_constant_identifier_names: ignore
     override_on_non_overriding_member: ignore
     unused_import: ignore

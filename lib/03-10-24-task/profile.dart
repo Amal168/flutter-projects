@@ -19,30 +19,30 @@ class Profile extends StatelessWidget {
       appBar: AppBar(
         centerTitle: true,
         backgroundColor: Colors.blueAccent[700],
-        title: Text('Profile Page',style: TextStyle(fontWeight: FontWeight.bold),),
+        title: const Text('Profile Page',style: TextStyle(fontWeight: FontWeight.bold),),
       ),
       body: Center(
         child: Padding(
           padding: const EdgeInsets.all(20.0),
           child: Column(
             children: [
-              CircleAvatar(
+              const CircleAvatar(
                 radius: 50,
                 backgroundImage: AssetImage("assets/gear-5-luffy-artwork-5k-3840x2160-18363.jpg"),
               
               ),
-              SizedBox(height: 16),
-              Text(
+              const SizedBox(height: 16),
+              const Text(
                 'Monkey D Luffy',
                 style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
               ),
-              Text(
+              const Text(
                 'Flutter Developer',
                 style: TextStyle(fontSize: 14, fontWeight: FontWeight.bold),
               ),
               
              
-              SizedBox(height: 16),
+              const SizedBox(height: 16),
               Expanded(
                 child: ListView.builder(
                   itemCount: interests.length,
@@ -68,18 +68,18 @@ class Profile extends StatelessWidget {
                     fontSize: 16.0,
                   );
                 },
-                child: Text('Show Toast'),
+                child: const Text('Show Toast'),
               ),
               
               ElevatedButton(
                 onPressed: () {
                   ScaffoldMessenger.of(context).showSnackBar(
-                    SnackBar(
+                    const SnackBar(
                       content: Text('Profile updated!'),
                     ),
                   );
                 },
-                child: Text('Update Profile'),
+                child: const Text('Update Profile'),
               ),
               ],)
             ],
