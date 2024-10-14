@@ -24,18 +24,7 @@ class _WhatsappState extends State<Whatsapp>
 
   int selectedBottomNavindex = 0;
 
-  late TabController _tabController;
-  @override
-  void initState() {
-    super.initState();
-    _tabController = TabController(length: 3, vsync: this);
-  }
-
-  @override
-  void dispose() {
-    _tabController.dispose();
-    super.dispose();
-  }
+  
 
   Widget build(BuildContext context) {
     return Scaffold(
@@ -110,90 +99,71 @@ class _WhatsappState extends State<Whatsapp>
         title: Text("WhatsApp"),
         backgroundColor: Colors.teal,
         centerTitle: true,
-        bottom: TabBar(controller: _tabController, isScrollable: false, tabs: [
-          Tab(
-            text: "Chats",
-          ),
-          Tab(
-            text: "States",
-          ),
-          Tab(
-            text: "Calls",
-          ),
-        ]),
-      ),
-      drawer: Drawer(
-        clipBehavior: Clip.hardEdge,
-        backgroundColor: Colors.black,
-        child: ListView(
+      
+    )
+    ,body: Center(
+      child: SingleChildScrollView(
+        child: Column(
           children: [
-            DrawerHeader(
-                decoration: BoxDecoration(
-                  color: Colors.black,
+            Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: TextFormField(
+                    decoration: InputDecoration(
+                      prefixIcon: Icon(Icons.search),
+                      hintText: "Search",
+                      border: OutlineInputBorder(
+                        
+                        borderRadius: BorderRadius.circular(30)
+                      
+                      )
+                    ),
+                  ),
                 ),
-                child: Text("Details")),
-            ListTile(
-              title: Text(
-                "Profile",
-                style:
-                    TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
-              ),
-              onTap: () {
-                Navigator.push(
-                    context, MaterialPageRoute(builder: (_) => Profile1()));
-              },
-            ),
-            ListTile(
-              title: Text("Acheved Chats",
-                  style: TextStyle(
-                      color: Colors.white, fontWeight: FontWeight.bold)),
-            ),
-            ListTile(
-              title: Text("Settings",
-                  style: TextStyle(
-                      color: Colors.white, fontWeight: FontWeight.bold)),
-            ),
-            ListTile(
-              title: Text("Help"),
-            ),
+                Padding(
+                  padding:  EdgeInsets.only(left:8.0),
+                  child: Row(
+                   
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                    ElevatedButton(onPressed: (){}, child:Text("All",),style: ButtonStyle(backgroundColor: WidgetStatePropertyAll(Colors.grey[200])),),
+                  (Padding(padding: EdgeInsets.only(left: 8.0))),
+                  ElevatedButton(onPressed: (){}, child:Text("Unread"),style: ButtonStyle(backgroundColor: WidgetStatePropertyAll(Colors.grey[200]))),
+                  (Padding(padding: EdgeInsets.only(left: 8.0))),
+                  ElevatedButton(onPressed: (){}, child:Text("Favourites"),style: ButtonStyle(backgroundColor: WidgetStatePropertyAll(Colors.grey[200]))),
+                  (Padding(padding: EdgeInsets.only(left: 8.0))),
+                  ElevatedButton(onPressed: (){}, child:Text("Group"),style: ButtonStyle(backgroundColor: WidgetStatePropertyAll(Colors.grey[200]))),
+                  (Padding(padding: EdgeInsets.only(left: 8.0))),
+                  ],),
+                ),
+              
+                
+                ListView.separated(
+                  shrinkWrap: true,
+                  physics: NeverScrollableScrollPhysics(), 
+                  itemCount: 20,
+                  itemBuilder: (context, index) {
+                    return ListTile(
+                      leading: CircleAvatar(),
+                      title: Text('person ${index + 1}'),
+                      subtitle: Text('chats'),
+                      trailing: Text('10:33 AM'),
+                    );
+                    
+                  },
+                  separatorBuilder: (context, index) {
+                    return Padding(
+                      padding: const EdgeInsets.symmetric(horizontal:  8.0),
+                      child: Divider(
+                 
+                      ),
+                    );
+                  },
+                ),
+                
           ],
         ),
       ),
-      body: TabBarView(controller: _tabController, children: <Widget>[
-        Center(
-          child:ListView(
-            children: [
-              Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: TextFormField(
-                  decoration: InputDecoration(
-                    prefixIcon: Icon(Icons.search),
-                    hintText: "Search",
-                    border: OutlineInputBorder(
-                      
-                      borderRadius: BorderRadius.circular(30)
-                    
-                    )
-                  ),
-                ),
-              )
-            ],
-          ),
-        ),
-        Center(
-          child: Text("Status", style: TextStyle(fontSize: 20)),
-        ),
-        Center(
-          child: Text("Calls", style: TextStyle(fontSize: 20)),
-        )
-      ]),
-      floatingActionButton: selectedBottomNavindex == 0
-          ? FloatingActionButton(
-              onPressed: () {},
-              child: Icon(Icons.chat),
-              backgroundColor: Colors.lightGreen,
-            )
-          : null,
+    ),
     );
   }
 }

@@ -14,6 +14,7 @@ class _BottomNavPageState extends State<BottomNavPage> {
     Whatsapp(),
     Center(child: Text("Contacts")),
     Center(child: Text("Settings")),
+    Center(child: Text("Update")),
   ];
     void _onitemtapped(int changedindex) {
     setState(() {
@@ -32,6 +33,9 @@ class _BottomNavPageState extends State<BottomNavPage> {
           ),
           BottomNavigationBarItem(icon: Icon(Icons.settings),
           label: "Settings"
+          ),
+          BottomNavigationBarItem(icon: Icon(Icons.update),
+          label: "Update"
           ),
         ],
         showSelectedLabels: true,

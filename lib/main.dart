@@ -62,7 +62,9 @@ class MyApp extends StatelessWidget {
       // home:  CounterScreen(),
       // home:  NameStorageScreen(),
       // home: Homescreen1(),
-      home: BottomNavPage(),
+      // home: BottomNavPage(),
+      home: Whatsapp(),
+      // home: BottomNavigationbarEx(),
 
 
       // routes:  {
