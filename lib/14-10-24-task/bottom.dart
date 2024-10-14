@@ -24,7 +24,7 @@ class _BottomNavPageState extends State<BottomNavPage> {
   Widget build(BuildContext context) {
     return  Scaffold(
       bottomNavigationBar: BottomNavigationBar(items: <BottomNavigationBarItem>[
-          BottomNavigationBarItem(icon: Icon(Icons.home),
+          BottomNavigationBarItem(icon: Icon(Icons.chat),
           label: "Home"
           ),
           BottomNavigationBarItem(icon: Icon(Icons.contacts),
