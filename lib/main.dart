@@ -15,6 +15,7 @@ import 'package:flutterproject/09-10-24-task/storescreen.dart';
 import 'package:flutterproject/10-10-24-task/Tabsection2.dart';
 import 'package:flutterproject/10-10-24-task/homeScreen1.dart';
 import 'package:flutterproject/11-10-24-task/sharedprefirenceEx.dart';
+import 'package:flutterproject/14-10-24-task/bottom.dart';
 import 'package:flutterproject/14-10-24-task/whatsapp.dart';
 import 'package:flutterproject/19_09_24_task/chessboard.dart';
 import 'package:flutterproject/19_09_24_task/circle.dart';
@@ -61,7 +62,7 @@ class MyApp extends StatelessWidget {
       // home:  CounterScreen(),
       // home:  NameStorageScreen(),
       // home: Homescreen1(),
-      home: Whatsapp(),
+      home: BottomNavPage(),
 
 
       // routes:  {

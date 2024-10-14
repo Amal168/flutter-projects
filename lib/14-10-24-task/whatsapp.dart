@@ -11,17 +11,8 @@ class Whatsapp extends StatefulWidget {
 
 class _WhatsappState extends State<Whatsapp>
     with SingleTickerProviderStateMixin {
-  int index = 0;
-  List bottombar = [
-    Text("Home"),
-    Text("Contacts"),
-    Text("Settings"),
-  ];
-  void _onitemtapped(int changedindex) {
-    setState(() {
-      index=changedindex;
-    });
-  }
+
+
 
   late TabController _tabController;
   @override
@@ -55,24 +46,7 @@ class _WhatsappState extends State<Whatsapp>
             ),
           ]),
         ),
-        bottomNavigationBar: BottomNavigationBar(items: <BottomNavigationBarItem>[
-          BottomNavigationBarItem(icon: Icon(Icons.home),
-          label: "Home"
-          ),
-          BottomNavigationBarItem(icon: Icon(Icons.contacts),
-          label: "Contacts"
-          ),
-          BottomNavigationBarItem(icon: Icon(Icons.settings),
-          label: "Settings"
-          ),
-        ],
-        showSelectedLabels: true,
-        selectedItemColor: Colors.blue,
-        unselectedItemColor: Colors.red,
-        enableFeedback: true,
-        currentIndex: index,
-        onTap: _onitemtapped,
-        ),
+       
         drawer: Drawer(
           backgroundColor: Colors.black,
           child: ListView(
