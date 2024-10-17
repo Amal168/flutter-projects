@@ -50,43 +50,43 @@ class _WhatsappState extends State<Whatsapp>
               }
             },
             itemBuilder: (BuildContext context) => <PopupMenuEntry>[
-              PopupMenuItem(
+              const PopupMenuItem(
                 value: "profile",
                 child: Row(
                   children: [
                     Padding(
-                      padding: const EdgeInsets.only(right: 8.0),
+                      padding: EdgeInsets.only(right: 8.0),
                       child: Icon(Icons.abc),
                     ),
-                    const Text(
+                    Text(
                       'Profile',
                       style: TextStyle(fontSize: 15),
                     ),
                   ],
                 ),
               ),
-              PopupMenuItem(
+              const PopupMenuItem(
                 value: "settings",
                 child: Row(
                   children: [
                     Padding(
-                        padding: const EdgeInsets.only(right: 8.0),
+                        padding: EdgeInsets.only(right: 8.0),
                         child: Icon(Icons.settings)),
-                    const Text(
+                    Text(
                       'Settings',
                       style: TextStyle(fontSize: 15),
                     ),
                   ],
                 ),
               ),
-              PopupMenuItem(
+              const PopupMenuItem(
                 value: "logout",
                 child: Row(
                   children: [
                     Padding(
-                        padding: const EdgeInsets.only(right: 8.0),
+                        padding: EdgeInsets.only(right: 8.0),
                         child: Icon(Icons.logout)),
-                    const Text(
+                    Text(
                       'Logout',
                       style: TextStyle(fontSize: 15),
                     ),
@@ -163,7 +163,9 @@ class _WhatsappState extends State<Whatsapp>
           ],
         ),
       ),
+      
     ),
+    floatingActionButton: FloatingActionButton(onPressed: (){},child: Icon(Icons.chat),),
     );
   }
 }

@@ -17,6 +17,10 @@ import 'package:flutterproject/10-10-24-task/homeScreen1.dart';
 import 'package:flutterproject/11-10-24-task/sharedprefirenceEx.dart';
 import 'package:flutterproject/14-10-24-task/bottom.dart';
 import 'package:flutterproject/14-10-24-task/whatsapp.dart';
+import 'package:flutterproject/15-10-24/counterprovider.dart';
+import 'package:flutterproject/15-10-24/providerclass.dart';
+import 'package:flutterproject/16-10-24-task/provider.dart';
+import 'package:flutterproject/16-10-24-task/providername.dart';
 import 'package:flutterproject/19_09_24_task/chessboard.dart';
 import 'package:flutterproject/19_09_24_task/circle.dart';
 import 'package:flutterproject/19_09_24_task/image.dart';
@@ -36,10 +40,18 @@ import 'package:flutterproject/26_09_24_task/ScreenB.dart';
 import 'package:flutterproject/27_09_24_task/buttons.dart';
 import 'package:flutterproject/30-09-24-task/homepage2.dart';
 import 'package:flutterproject/30-09-24-task/login1.dart';
+import 'package:provider/provider.dart';
 //import 'package:flutterproject/24-09-24-task/login1.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(MultiProvider(
+      providers: [
+        ChangeNotifierProvider<Providerstr>(
+          create: (create)=> Providerstr(),
+          ),
+          
+      ],
+      child: MyApp()));
 }
 
 class MyApp extends StatelessWidget {
@@ -47,32 +59,36 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
-      ),
-      // home: const BottomNavigationBarEg(),
-      // home:  tadbaranddrawerEx(),
-      // home:  Tabsection2(),
-      // home:  Sharedprefirenceex(),
-      // home:  CounterScreen(),
-      // home:  NameStorageScreen(),
-      // home: Homescreen1(),
-      // home: BottomNavPage(),
-      home: Whatsapp(),
-      // home: BottomNavigationbarEx(),
-
-
-      // routes:  {
-      //   'home': (context) => const Home(),
-      //   'screenA':(context) => const ScreenA(),
-      //   'screenB':(context) => const ScreenB()
-      // },
-      // initialRoute: 'home',
+    return  MaterialApp(
+        debugShowCheckedModeBanner: false,
+        title: 'Flutter Demo',
+        // darkTheme: ThemeData.dark(),
+        theme: ThemeData(
+          
+          colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+          useMaterial3: true,
+        ),
+        // home: const BottomNavigationBarEg(),
+        // home:  tadbaranddrawerEx(),
+        // home:  Tabsection2(),
+        // home:  Sharedprefirenceex(),
+        // home:  CounterScreen(),
+        // home:  NameStorageScreen(),
+        // home: Homescreen1(),
+        // home: BottomNavPage(),
+        // home: Whatsapp(),
+        // home: BottomNavigationbarEx(),
+        // home:  Counterprovider(),
+        home:  Providername(),
+        // home:  BottomNavPage(),
+      
+      
+        // routes:  {
+        //   'home': (context) => const Home(),
+        //   'screenA':(context) => const ScreenA(),
+        //   'screenB':(context) => const ScreenB()
+        // },
+        // initialRoute: 'home',
     );
   }
 }
