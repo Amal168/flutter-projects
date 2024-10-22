@@ -12,9 +12,9 @@ class _BottomNavPageState extends State<BottomNavPage> {
     int index = 0;
   List bottombar = [
     Whatsapp(),
-    Center(child: Text("Contacts")),
-    Center(child: Text("Settings")),
-    Center(child: Text("Update")),
+    const Center(child: Text("Contacts")),
+    const Center(child: Text("Settings")),
+    const Center(child: Text("Update")),
   ];
     void _onitemtapped(int changedindex) {
     setState(() {
@@ -24,7 +24,7 @@ class _BottomNavPageState extends State<BottomNavPage> {
   @override
   Widget build(BuildContext context) {
     return  Scaffold(
-      bottomNavigationBar: BottomNavigationBar(items: <BottomNavigationBarItem>[
+      bottomNavigationBar: BottomNavigationBar(items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(icon: Icon(Icons.chat),
           label: "Home"
           ),

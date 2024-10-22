@@ -6,7 +6,7 @@ import 'package:flutterproject/09-10-24-task/profile1.dart';
 import 'package:image_picker/image_picker.dart';
 
 class Whatsapp extends StatefulWidget {
-  Whatsapp({super.key});
+  const Whatsapp({super.key});
 
   @override
   State<Whatsapp> createState() => _WhatsappState();
@@ -30,14 +30,14 @@ class _WhatsappState extends State<Whatsapp>
     return Scaffold(
       appBar: AppBar(
         actions: [
-          Icon(Icons.qr_code),
-          SizedBox(
+          const Icon(Icons.qr_code),
+          const SizedBox(
             width: 10,
           ),
           IconButton(onPressed: (){
             Navigator.pop(context);
             pickimage(ImageSource.camera);
-          }, icon: Icon(Icons.camera_alt_outlined)),
+          }, icon: const Icon(Icons.camera_alt_outlined)),
           // MenuItemButton(onPressed: (){},child: Icon(Icons.menu),),
           PopupMenuButton(
             onSelected: (value) {
@@ -50,43 +50,44 @@ class _WhatsappState extends State<Whatsapp>
               }
             },
             itemBuilder: (BuildContext context) => <PopupMenuEntry>[
-              PopupMenuItem(
+              const PopupMenuItem(
                 value: "profile",
                 child: Row(
                   children: [
                     Padding(
-                      padding: const EdgeInsets.only(right: 8.0),
+                      padding: EdgeInsets.only(right: 8.0),
                       child: Icon(Icons.abc),
                     ),
-                    const Text(
+                    Text(
                       'Profile',
                       style: TextStyle(fontSize: 15),
                     ),
                   ],
                 ),
               ),
-              PopupMenuItem(
+              const PopupMenuItem(
                 value: "settings",
                 child: Row(
                   children: [
                     Padding(
-                        padding: const EdgeInsets.only(right: 8.0),
+                        padding: EdgeInsets.only(right: 8.0),
                         child: Icon(Icons.settings)),
-                    const Text(
+                    Text(
                       'Settings',
                       style: TextStyle(fontSize: 15),
                     ),
                   ],
                 ),
               ),
-              PopupMenuItem(
+              const PopupMenuItem(
+
                 value: "logout",
                 child: Row(
                   children: [
                     Padding(
-                        padding: const EdgeInsets.only(right: 8.0),
+                        padding: EdgeInsets.only(right: 8.0),
                         child: Icon(Icons.logout)),
-                    const Text(
+                    Text(
                       'Logout',
                       style: TextStyle(fontSize: 15),
                     ),
@@ -96,7 +97,7 @@ class _WhatsappState extends State<Whatsapp>
             ],
           )
         ],
-        title: Text("WhatsApp"),
+        title: const Text("WhatsApp"),
         backgroundColor: Colors.teal,
         centerTitle: true,
       
@@ -109,7 +110,7 @@ class _WhatsappState extends State<Whatsapp>
                   padding: const EdgeInsets.all(8.0),
                   child: TextFormField(
                     decoration: InputDecoration(
-                      prefixIcon: Icon(Icons.search),
+                      prefixIcon: const Icon(Icons.search),
                       hintText: "Search",
                       border: OutlineInputBorder(
                         
@@ -120,39 +121,39 @@ class _WhatsappState extends State<Whatsapp>
                   ),
                 ),
                 Padding(
-                  padding:  EdgeInsets.only(left:8.0),
+                  padding:  const EdgeInsets.only(left:8.0),
                   child: Row(
                    
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                    ElevatedButton(onPressed: (){}, child:Text("All",),style: ButtonStyle(backgroundColor: WidgetStatePropertyAll(Colors.grey[200])),),
-                  (Padding(padding: EdgeInsets.only(left: 8.0))),
-                  ElevatedButton(onPressed: (){}, child:Text("Unread"),style: ButtonStyle(backgroundColor: WidgetStatePropertyAll(Colors.grey[200]))),
-                  (Padding(padding: EdgeInsets.only(left: 8.0))),
-                  ElevatedButton(onPressed: (){}, child:Text("Favourites"),style: ButtonStyle(backgroundColor: WidgetStatePropertyAll(Colors.grey[200]))),
-                  (Padding(padding: EdgeInsets.only(left: 8.0))),
-                  ElevatedButton(onPressed: (){}, child:Text("Group"),style: ButtonStyle(backgroundColor: WidgetStatePropertyAll(Colors.grey[200]))),
-                  (Padding(padding: EdgeInsets.only(left: 8.0))),
+                    ElevatedButton(onPressed: (){},style: ButtonStyle(backgroundColor: WidgetStatePropertyAll(Colors.grey[200])), child:Text("All",),),
+                  (const Padding(padding: EdgeInsets.only(left: 8.0))),
+                  ElevatedButton(onPressed: (){},style: ButtonStyle(backgroundColor: WidgetStatePropertyAll(Colors.grey[200])), child:Text("Unread")),
+                  (const Padding(padding: EdgeInsets.only(left: 8.0))),
+                  ElevatedButton(onPressed: (){},style: ButtonStyle(backgroundColor: WidgetStatePropertyAll(Colors.grey[200])), child:Text("Favourites")),
+                  (const Padding(padding: EdgeInsets.only(left: 8.0))),
+                  ElevatedButton(onPressed: (){},style: ButtonStyle(backgroundColor: WidgetStatePropertyAll(Colors.grey[200])), child:Text("Group")),
+                  (const Padding(padding: EdgeInsets.only(left: 8.0))),
                   ],),
                 ),
               
                 
                 ListView.separated(
                   shrinkWrap: true,
-                  physics: NeverScrollableScrollPhysics(), 
+                  physics: const NeverScrollableScrollPhysics(), 
                   itemCount: 20,
                   itemBuilder: (context, index) {
                     return ListTile(
-                      leading: CircleAvatar(),
+                      leading: const CircleAvatar(),
                       title: Text('person ${index + 1}'),
-                      subtitle: Text('chats'),
-                      trailing: Text('10:33 AM'),
+                      subtitle: const Text('chats'),
+                      trailing: const Text('10:33 AM'),
                     );
                     
                   },
                   separatorBuilder: (context, index) {
-                    return Padding(
-                      padding: const EdgeInsets.symmetric(horizontal:  8.0),
+                    return const Padding(
+                      padding: EdgeInsets.symmetric(horizontal:  8.0),
                       child: Divider(
                  
                       ),

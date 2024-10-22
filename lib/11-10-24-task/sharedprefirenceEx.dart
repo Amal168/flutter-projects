@@ -43,7 +43,7 @@ class _SharedprefirenceexState extends State<Sharedprefirenceex> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Shared preferance"),
+        title: const Text("Shared preferance"),
         centerTitle: true,
         backgroundColor: Colors.lightBlueAccent,
       ),
@@ -53,7 +53,7 @@ class _SharedprefirenceexState extends State<Sharedprefirenceex> {
           children: [
             DropdownButton<String>(
                 value: _dropdrwnvalue,
-                items: [
+                items: const [
                   DropdownMenuItem<String>(value: 'Red', child: Text("Red")),
                   DropdownMenuItem<String>(
                       value: 'Green', child: Text("Green")),
@@ -79,7 +79,7 @@ class _SharedprefirenceexState extends State<Sharedprefirenceex> {
             _showvalue != null 
                 ? Text('Saved color: $_showvalue',
                     style: const TextStyle(fontSize: 20))
-                : SizedBox(),
+                : const SizedBox(),
             const SizedBox(height: 20),
             ElevatedButton(
               onPressed: () async {

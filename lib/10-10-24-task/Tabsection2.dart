@@ -8,21 +8,21 @@ import 'package:flutterproject/26_09_24_task/Home.dart';
 class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Center(child: Text("Home Page"));
+    return const Center(child: Text("Home Page"));
   }
 }
 
 class SearchPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Center(child: Text("Search Page"));
+    return const Center(child: Text("Search Page"));
   }
 }
 
 class ProfilePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Center(child: Text("Profile Page"));
+    return const Center(child: Text("Profile Page"));
   }
 }
 
@@ -39,9 +39,9 @@ class _Tabsection2State extends State<Tabsection2>
   int _selectedIndex = 0;
 
   final List<Widget> _pages = [
-    Home(),
+    const Home(),
     SearchPage(),
-    Profile1(),
+    const Profile1(),
   ];
 
   @override
@@ -68,7 +68,7 @@ class _Tabsection2State extends State<Tabsection2>
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Tab Section"),
+        title: const Text("Tab Section"),
         bottom: TabBar(
           controller: _tabController,
           tabs: const [
@@ -92,31 +92,31 @@ class _Tabsection2State extends State<Tabsection2>
       drawer: Drawer(
         child: ListView(
           children: [
-            DrawerHeader(child: Text("Tab Section")),
+            const DrawerHeader(child: Text("Tab Section")),
             ListTile(
-              title: Text("Home screen"),
+              title: const Text("Home screen"),
               onTap: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (_) => Homescreen1()),
+                  MaterialPageRoute(builder: (_) => const Homescreen1()),
                 );
               },
             ),
             ListTile(
-              title: Text("Settings"),
+              title: const Text("Settings"),
               onTap: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (_) => Settings()),
+                  MaterialPageRoute(builder: (_) => const Settings()),
                 );
               },
             ),
             ListTile(
-              title: Text("About"),
+              title: const Text("About"),
               onTap: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (_) => About()),
+                  MaterialPageRoute(builder: (_) => const About()),
                 );
               },
             ),

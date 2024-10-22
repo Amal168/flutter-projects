@@ -29,7 +29,7 @@ class _ProvidernameState extends State<Providername> {
                     border: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(50))),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 10,
               ),
               ElevatedButton(
@@ -37,8 +37,8 @@ class _ProvidernameState extends State<Providername> {
                     userName.addName(User(
                         id: DateTime.now().toString(), name: _controller.text));
                   },
-                  child: Text("Save text")),
-              SizedBox(
+                  child: const Text("Save text")),
+              const SizedBox(
                 height: 10,
               ),
               Expanded(
@@ -55,19 +55,19 @@ class _ProvidernameState extends State<Providername> {
                                   
                                   userName.updateName(user.id,_controller.text);
                                 },
-                                icon: Icon(Icons.edit)),
+                                icon: const Icon(Icons.edit)),
                             IconButton(
                                 onPressed: () {
                                   userName.deleteName(user.id);
                                 },
-                                icon: Icon(Icons.delete)),
+                                icon: const Icon(Icons.delete)),
                           ],
                         ),
                       );
                     },
                     separatorBuilder: (context, index) {
-                      return Padding(
-                        padding: const EdgeInsets.all(8.0),
+                      return const Padding(
+                        padding: EdgeInsets.all(8.0),
                         child: Divider(),
                       );
                     },

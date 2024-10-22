@@ -16,34 +16,34 @@ class _Homescreen1State extends State<Homescreen1> with SingleTickerProviderStat
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Home Screen"),
+        title: const Text("Home Screen"),
         centerTitle: true,
         backgroundColor: Colors.lightBlue,
       ),
       drawer: Drawer(
         child: ListView(
           children: [
-            DrawerHeader(child: Text("Home Screen"),decoration: BoxDecoration(color: const Color.fromARGB(255, 255, 147, 24)),curve: Curves.easeInBack,),
+            const DrawerHeader(decoration: BoxDecoration(color: Color.fromARGB(255, 255, 147, 24)),curve: Curves.easeInBack,child: Text("Home Screen"),),
             ListTile(
-              title: Text("Tab Section"),
+              title: const Text("Tab Section"),
               
               onTap: () {
                 Navigator.push(
-                    context, MaterialPageRoute(builder: (_) => Tabsection2()));
+                    context, MaterialPageRoute(builder: (_) => const Tabsection2()));
               },
             ),
             ListTile(
-              title: Text("settings"),
+              title: const Text("settings"),
               onTap: () {
                 Navigator.push(
-                    context, MaterialPageRoute(builder: (_) => Settings()));
+                    context, MaterialPageRoute(builder: (_) => const Settings()));
               },
             ),
             ListTile(
-              title: Text("About"),
+              title: const Text("About"),
               onTap: () {
                 Navigator.push(
-                    context, MaterialPageRoute(builder: (_) => About()));
+                    context, MaterialPageRoute(builder: (_) => const About()));
               },
             )
           ],

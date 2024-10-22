@@ -22,6 +22,7 @@ import 'package:flutterproject/19_09_24_task/login.dart';
 import 'package:flutterproject/19_09_24_task/signup.dart';
 //import 'package:flutterproject/19_09_24_task/signup.dart';
 import 'package:flutterproject/19_09_24_task/welcomeback.dart';
+import 'package:flutterproject/21-10-24-task/addprofileget.dart';
 import 'package:flutterproject/24-09-24-task/addplants6.dart';
 import 'package:flutterproject/24-09-24-task/loginpage1.dart';
 import 'package:flutterproject/24-09-24-task/buy4.dart';
@@ -34,6 +35,7 @@ import 'package:flutterproject/26_09_24_task/ScreenB.dart';
 import 'package:flutterproject/27_09_24_task/buttons.dart';
 import 'package:flutterproject/30-09-24-task/homepage2.dart';
 import 'package:flutterproject/30-09-24-task/login1.dart';
+import 'package:get/get.dart';
 //import 'package:flutterproject/24-09-24-task/login1.dart';
 
 void main() {
@@ -45,7 +47,7 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return GetMaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
@@ -55,11 +57,12 @@ class MyApp extends StatelessWidget {
       ),
       // home: const BottomNavigationBarEg(),
       // home:  tadbaranddrawerEx(),
-      home:  Tabsection2(),
+      // home:  Tabsection2(),
       // home:  Sharedprefirenceex(),
       // home:  CounterScreen(),
       // home:  NameStorageScreen(),
       // home: Homescreen1(),
+      home: Addprofileget(),
 
       // routes:  {
       //   'home': (context) => const Home(),
